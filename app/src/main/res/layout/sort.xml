@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".SortActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="221dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="Filtern"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="283dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="36dp" />
+
+    <RadioGroup
+        android:id="@+id/sortRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sortiere nach Beschreibung"/>
+
+        <RadioButton
+            android:id="@+id/radioDueDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sortiere nach Fälligkeitsdatum"/>
+
+        <RadioButton
+            android:id="@+id/radioCreationDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sortiere nach Erstelldatum"/>
+
+        <RadioButton
+            android:id="@+id/radioState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sortiere nach Status"/>
+
+        <RadioButton
+            android:id="@+id/radioAssignedPerson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sortiere nach zugewiesene Person"/>
+
+        <RadioButton
+            android:id="@+id/radioAssigningPerson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sortiere nach zuweisende Person"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sortieren"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RadioGroup
+        android:id="@+id/sortFilterGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Erledigte einblenden" />
+
+    </RadioGroup>
+
+</LinearLayout>
